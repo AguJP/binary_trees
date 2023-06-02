@@ -22,7 +22,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 
 	p = first->parent;
 	q = second->parent;
-	if (p == NULL || first == q || (!p->parent && q));
+	if (p == NULL || first == q || (!p->parent && q))
 	{
 		return (binary_trees_ancestor(first, q));
 	}
